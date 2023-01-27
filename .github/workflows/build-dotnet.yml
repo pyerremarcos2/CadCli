@@ -31,9 +31,9 @@ jobs:
       working-directory: src/CadCli.Api
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --verbosity normal
       working-directory: src/CadCli.Tests
       
     - name: Publish
       run: dotnet publish -c Release -o myap
-      working-directory: src/CadCli.API
+      working-directory: src/CadCli.Api
